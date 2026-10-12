@@ -6,7 +6,6 @@ class Solution{
             if(n < 2){
                 return false;
             }
-
             int i = 2;
             bool isp = true;
             while(i < n){
@@ -15,18 +14,16 @@ class Solution{
                 }
                 i++;
             }
-
             if(isp){
                 return true;
             }
 
         return false;
     }
-       
 };
 
 int main(){
     Solution s;
-    s.p(8);
+    cout<< s.p(7);
     return 0;
 }
