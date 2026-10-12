@@ -10,6 +10,7 @@ class Solution {
         }
         return cnt;
     }
+    
     bool armstrongNumber(int n) {
         // code here
         int Arms = n;
@@ -20,13 +21,11 @@ class Solution {
             sum += pow(digits,d);
             n /= 10;
         }
-        
         if(sum == Arms){
             return true;
         }else{
             return false;
         }
-        
     }
 };
 
