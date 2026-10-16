@@ -10,7 +10,6 @@ public:
             right--;
         }
      }
-
 };
 int main(){
     int n;
