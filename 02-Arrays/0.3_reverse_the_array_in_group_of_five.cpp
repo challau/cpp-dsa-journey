@@ -2,7 +2,7 @@
 using namespace std;
 class Solution{
 public:
-     void reverseInGroups(vector<int>& arr, int k){
+     void reverseIGroups(vector<int>& arr, int k){
         int n = arr.size();
         for(int i = 0; i < n; i += k){
             int left = i;
@@ -25,10 +25,9 @@ int main(){
     }
 
     Solution obj;
-    obj.reverseInGroups(arr,k);
+    obj.reverseIGroups(arr,k);
     for(int x: arr){
         cout<< x << " ";
     }
     return 0;
 }
-
