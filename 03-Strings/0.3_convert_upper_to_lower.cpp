@@ -24,3 +24,4 @@ int main(){
     string s1 = obj.toggleCase(s);
     cout<<s1<<endl;
 }
+
