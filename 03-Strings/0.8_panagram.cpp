@@ -25,7 +25,6 @@ class Solution {
     }
 };
 
-
 int main(){
     Solution obj;
     string s;
