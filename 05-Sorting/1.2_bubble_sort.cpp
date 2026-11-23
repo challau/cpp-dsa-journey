@@ -26,11 +26,10 @@ int main(){
     for(int i = 0; i < n; i++) {
         cin >> vec[i];
     }
-
     bubble_sort(vec,n);
     for(int x: vec){
         cout << x << " ";
     }
-    return 0;
+    return 0; 
 
 }
