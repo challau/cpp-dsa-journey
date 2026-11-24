@@ -1,3 +1,11 @@
+// Basic Searching Algorithms:
+// Linear Search – O(n) Time and O(1) Space
+// It is the simplest searching algorithm that checks each element sequentially until the key is found or the collection is fully traversed. Works on both sorted and unsorted data. For more details refer here.
+
+// For example: Consider the array arr[] = {10, 50, 30, 70, 80, 20, 90, 40} and key = 30
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,7 +24,7 @@ public:
         return -1;
     }
 };
-
+// time complexity takes O(n) space take O(1)
 
 int main()
 {
