@@ -5,55 +5,55 @@
 // For example: Consider the array  arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91}, and the key = 23.
 
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
-// class Solution
-// {
-// public:
-//     int binary_s(vector<int> b, int idx)
-//     {
+class Solution
+{
+public:
+    int binary_s(vector<int> b, int idx)
+    {
 
-//         int low = 0, high = b.size() - 1;
+        int low = 0, high = b.size() - 1;
 
-//         while(low <= high){
-//             int mid = (low + high)/2;
-//             if(b[mid] == idx){
-//                 return mid;
-//             }else if(b[mid] < idx){
-//                 low = mid + 1;
-//             }else{
-//                 high = mid - 1;
-//             }
-//         }
+        while(low <= high){
+            int mid = (low + high)/2;
+            if(b[mid] == idx){
+                return mid;
+            }else if(b[mid] < idx){
+                low = mid + 1;
+            }else{
+                high = mid - 1;
+            }
+        }
 
-//         return -1;
-//     }
-// };
+        return -1;
+    }
+};
 
 
-// int main(){
-//     Solution obj;
+int main(){
+    Solution obj;
 
-//     int n;
-//     cin >> n;
-//     vector<int> a(n);
-//     for(int i = 0; i < n; i++){
-//         cin >> a[i];
-//     }
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    for(int i = 0; i < n; i++){
+        cin >> a[i];
+    }
 
-//     int idx;
-//     cin >> idx;
+    int idx;
+    cin >> idx;
 
-//     int result = obj.binary_s(a, idx);
+    int result = obj.binary_s(a, idx);
 
-//     if( result != -1){
-//         cout<< "The element found "<< result << " in this index " << endl;
-//     }else{
-//         cout<< "The element index not found in this array"<<endl;
-//     }
-//     return 0;
-// }
+    if( result != -1){
+        cout<< "The element found "<< result << " in this index " << endl;
+    }else{
+        cout<< "The element index not found in this array"<<endl;
+    }
+    return 0;
+}
 
 
 
