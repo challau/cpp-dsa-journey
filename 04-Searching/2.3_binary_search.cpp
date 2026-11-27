@@ -38,8 +38,10 @@ public:
     }
 };
 
+
 int main()
 {
+
     Solution obj;
 
     int n;
@@ -47,6 +49,6 @@ int main()
 
     cout << obj.floorSqrt(n);
 
-    
     return 0;
 }
+
